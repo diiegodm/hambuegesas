@@ -1,0 +1,317 @@
+/*header*/
+.div_header {
+
+    background-color: rgb(42, 42, 42);
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.barras{
+    display: none;
+}
+
+.icon {
+    color: orangered;
+    padding: 20px 0;
+
+}
+
+.link_icono {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+}
+
+.nav_header {
+
+    padding: 5px;
+}
+
+.lista_nav {
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+}
+
+.lista_nav a {
+    color: rgba(165, 42, 42, 0.629);
+    font-weight: 500;
+}
+
+.lista_nav a:hover {
+    color: orangered;
+}
+
+.lista_nav .menu {
+    color: orange;
+}
+
+
+
+
+
+
+/*cuerpo */
+
+.section_principal {
+    background-image: url(/images/fondo.jpg);
+    height: 650px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+
+}
+
+.div_principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.345);
+    width: 100%;
+    height: 100%;
+
+}
+
+.principal {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: left;
+    width: 70%;
+
+}
+
+.titulo_principal {
+    color: whitesmoke;
+    font-family: "Caveat", cursive;
+    font-size: 45px;
+
+    padding: 10px;
+}
+
+.titulo_principal h1 {
+    font-weight: 100;
+}
+
+.titulo_segundario h2 {
+    padding: 10px;
+    color: orangered;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.enlace_principal {
+    border: 1px solid orangered;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: orangered;
+
+}
+
+.enlace_principal a {
+    color: whitesmoke;
+}
+
+.enlace_principal:hover {
+    background-color: transparent;
+    a { color:orangered;}
+}
+
+.cuerpo {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px;
+    color: whitesmoke;
+}
+
+.iconos_principal {
+    display: flex;
+    gap: 15px;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.icono_redes {
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+/*contenido informativo*/
+
+.line {
+    color: black;
+}
+
+.our {
+    font-size: 45px;
+    color: black;
+    text-align: center;
+    font-family: "Caveat", cursive;
+    margin: 20px 0 20px 0;
+   
+}
+
+.our span {
+    color: orangered;
+}
+
+
+.servicios {
+
+    display: flex;
+    column-gap: 20px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.partes {
+    border-left: 1px solid black;
+    width: 80%;
+    padding-top: 15px;
+}
+
+.servicio_icono {
+    color: orangered;
+    display: inline;
+    padding: 0 0 0 13px;
+   
+
+}
+.servicio_icono i{
+    font-size: 25px;
+    border: 1px solid orangered;
+    padding: 3px 6px;
+    margin-left: 5px;
+}
+
+.servicio_cuerpo {
+    margin: 0 5px;
+    margin: 15px 0 15px 5px;
+    font-size: 20px;
+    padding: 0 0 0 13px;
+}
+
+.enlace_partes a {
+
+    color: orangered;
+    font-size: 15px;
+    padding: 0 0 0 13px;
+}
+
+
+/*seccion about us */
+
+.about{
+    margin: 35px 0 30px 0;
+}
+.about_us{
+    display: flex;
+    width: 70%;
+    margin: 0  auto 15px auto;
+    column-gap: 5px;
+}
+.img{
+    width: 85%;
+    padding: 10px;
+}
+.history{
+    padding: 10px 0;
+    font-size: 25px;
+}
+
+
+.our_restaurant{
+    margin-bottom: 10px;
+}
+.our_restaurant a{
+    margin-bottom: 10px;
+    color: orangered;
+    font-size: 17px;
+}
+.history_p{
+    width: 80%;
+}
+.enlace_history{
+    box-sizing: border-box;
+    width: 30%;
+    margin-top: 25px;
+}
+
+/* inicio de responsive*/
+
+@media(max-width: 768px){
+
+
+
+    .nav_header{
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+    .link_icono {
+       display: none;
+    }
+    .barras{
+        display: inline-block;
+        position: absolute;
+        top: 5;
+        right: 0;
+    }
+  
+    .lista_header {
+        display: block;
+       
+    }
+    .lista_nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .lista_nav li{
+      border-bottom: 1px solid black;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .logo{
+      display: inline-block;
+      
+    }
+    .section_principal {
+        background-image: url(/images/fondo.jpg);
+        height: 650px;
+        width: 100%;
+        background-position: center;
+    }
+  
+    
+    .servicios{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .partes {
+        
+        border-bottom: 1px solid black;
+        width: 70%;
+        padding-bottom: 25px;
+    }
+
+   
+    
+}
+
+/*fin del responsive*/
