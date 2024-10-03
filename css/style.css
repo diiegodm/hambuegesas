@@ -247,6 +247,15 @@
     margin-top: 25px;
 }
 
+/*Footer*/
+
+
+    .p_footer{
+        text-align: center;
+        font-size:25px;
+    }
+
+
 /* inicio de responsive*/
 
 @media(max-width: 768px){
@@ -290,14 +299,19 @@
       display: inline-block;
       
     }
+    /*fin header*/
+
+    /*seccion principal*/
+
     .section_principal {
         background-image: url(/images/fondo.jpg);
         height: 650px;
         width: 100%;
         background-position: center;
     }
+    /*fin seccion principal*/
   
-    
+    /* inicio de servicios*/
     .servicios{
         display: flex;
         flex-wrap: wrap;
@@ -310,7 +324,11 @@
         padding-bottom: 25px;
     }
 
-   
+    /*fin de servicios*/
+   .about_us {
+display: block;
+   }
+
     
 }
 
